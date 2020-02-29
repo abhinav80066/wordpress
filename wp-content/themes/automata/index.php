@@ -11,7 +11,16 @@
     <title>Hello, there!</title>
   </head>
   <body>
+    <header>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="http://www.abhinav.com/about2/">contact</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+  </header>
+
     <h1>Hello, there!</h1>
+    <img src="F:\photos\_104404974_skull.png" width="600px">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
