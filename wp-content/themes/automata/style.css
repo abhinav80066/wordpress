@@ -1,11 +1,12 @@
 style.css
-header{
-top=0;
-right=0;
+background-image:F:\photos('college.jpg');
 left=0;
 position=fixed;
 background-color:black;
 padding:5px;
+header{
+top=0;
+right=0;
 }
 .first{
 text-align:center;
