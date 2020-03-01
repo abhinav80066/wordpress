@@ -1,5 +1,4 @@
 style.css
-background-image:F:\photos('college.jpg');
 left=0;
 position=fixed;
 background-color:black;
@@ -42,3 +41,15 @@ font-weight:bolder;
 hr{
 border-bottom:4px black solid;
 }
+.logo {
+	height: 50px;
+}
+.menu-item {
+	padding: 0 10px;
+}
+header .menu-item a {
+	color: red;
+}
+footer .menu-item a {
+	color: white;
+	}

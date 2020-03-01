@@ -1,3 +1,4 @@
+
 <?php
 
 function automata_setup() {
@@ -9,9 +10,9 @@ function automata_setup() {
  	// This theme uses wp_nav_menu() in two locations.
  	register_nav_menus(
  		array(
- 			'menu-1' => __( 'Primary', 'bootcamp-2020' ),
- 			'footer' => __( 'Footer Menu', 'bootcamp-2020' ),
- 			'social' => __( 'Social Links Menu', 'bootcamp-2020' ),
+ 			'menu-1' => __( 'Primary', 'automata' ),
+ 			'footer' => __( 'Footer Menu', 'automata' ),
+ 			'social' => __( 'Social Links Menu', 'automata' ),
  		)
  	);
 
@@ -27,5 +28,21 @@ function automata_setup() {
  			'flex-height' => false,
  		)
  	);
+add_theme_support( 'wp-block-styles' );
 }
 add_action( 'after_setup_theme', 'automata_setup' );
+
+
+
+
+// Add theme styles and scripts
+/**
+ * Proper way to enqueue scripts and styles
+ */
+
+function wpdocs_theme_name_scripts() {
+    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+    // wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
